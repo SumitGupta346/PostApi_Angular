@@ -1,0 +1,27 @@
+<h1>POST API</h1>
+<form #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
+  <table border="2" bgcolor="#ccfff5" cellpadding="10" width="500">
+    <tr>
+      <td>
+        <label for="name">Name </label>
+      </td>
+      <td><input type="text" placeholder="Enter Name" name="name" ngModel/></td>
+    </tr>
+    <tr>
+      <td><label for="email">Email </label></td>
+      <td><input type="text" name="email" placeholder="Enter Email" ngModel/></td>
+    </tr>
+    <tr>
+      <td><label for="password">Password </label></td>
+      <td>
+        <input type="password" name="password" placeholder="Enter Password" ngModel />
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <input type="reset" value="Reset" />
+      </td>
+      <td><button>Add New User</button></td>
+    </tr>
+  </table>
+</form>
